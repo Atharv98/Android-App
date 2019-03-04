@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bg bgcolor="black" text="red">
+	<h1><center>13.6 Directory</center></h1>
+	<pre>
+		
+
+A directory is a File which can contains a list of other files and directories. 
+You use File object to create directories, to list down files available in a directory. 
+For complete detail check a list of all the methods which you can call on File object and what are related to directories.
+
+Creating Directories:
+There are two useful File utility methods, which can be used to create directories:
+The mkdir( ) method creates a directory, returning true on success and false on failure. Failure indicates that the path specified in the File object already exists, or that the directory cannot be created because the entire path does not exist yet.
+
+The mkdirs() method creates both a directory and all the parents of the directory.
+
+Listing Directories:
+You can use list( ) method provided by File object to list down all the files and directories available in a directory
+
+Deleting Directories:
+To delete a directory, you can simply use the File.delete(), but the directory must be empty in order to delete it.
+
+Often times, you may require to perform recursive delete in a directory, which means all it's sub-directories and files should be delete as well.
+
+	</pre>
+
+</body>
+</html>

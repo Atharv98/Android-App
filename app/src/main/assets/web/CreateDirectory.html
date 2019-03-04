@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Directory</title>
+</head>
+<body bgcolor="black" text="yellow">
+	<pre>
+		
+import java.io.*;
+
+public class CreateDirectory{
+
+		public static void main(String[] args)
+		{
+			File dir = new File("C://FileIO//DemoDirectory");
+
+			boolean isDirectoryCreated = dir.mkdir();
+
+			if(isDirectoryCreated)
+			System.out.println("Directory created successfully");
+			else
+			System.out.println("Directory was not created successfully");
+		}
+}
+	</pre>
+
+</body>
+</html>

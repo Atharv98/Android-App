@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bg bgcolor="black" text="red">
+	<h1><center>8.3 Implementing Interfaces</center></h1>
+	<pre>
+
+		
+
+A class uses the implements keyword to implement an interface. The implements keyword appears in the class declaration following the extends portion of the declaration.
+
+class classname implements interfacename
+{
+body of classname
+}
+
+here the classname "implements" the interface interfacename. A more general form of implementation may look like this:
+class classname extends superclass implements interface1,interface2,...
+{
+body of classname
+}
+
+Example:
+interface MyInterface
+{
+public void method1();
+public void method2();
+}
+
+class XYZ implements MyInterface
+{
+public void method1()
+{
+System.out.println("implementation of method1");
+}
+public void method2()
+{
+System.out.println("implementation of method2");
+}
+
+public static void main(String arg[])
+{
+MyInterface obj = new XYZ();
+obj. method1();
+}
+}
+Output:
+implementation of method1
+
+		
+	</pre>
+
+</body>
+</html>

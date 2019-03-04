@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bg bgcolor="black" text="red">
+	<h1><center>7.1 Arrays</center></h1>
+	<pre>
+		
+
+Array is an object the contains elements of similar data type. It is a data structure where we store similar elements. We can store only fixed set of elements in a java array.
+Array in java is index based, first element of the array is stored at 0 index.
+
+Types of Array in java
+1. Single Dimensional Array
+2. Multidimensional Array
+
+1. Single Dimensional Array
+Declaring Array Variables:
+To use an array in a program, you must declare a variable to reference the array, and you must specify the type of array the variable can reference. Here is the syntax for declaring an array variable:
+
+dataType[] arrayName; 
+or
+dataType arrayName[];
+
+Instantiating Arrays:
+You can instantiate an array by using the new operator with the following syntax:
+
+arrayName = new dataType[arraySize];
+
+The above statement does two things:
+It creates an array using new dataType[arraySize];
+It assigns the reference of the newly created array to the variable arrayName.
+
+2. Multidimensional Array
+Syntax to Declare Multidimensional Array in java
+
+dataType[][] arrayName; or 
+dataType arrayName[][];
+
+Example to instantiate Multidimensional Array
+int[][] arr=new int[2][3];
+//2 row and 3 column 
+
+Example to initialize Multidimensional Array in java
+arr[0][0]=1; 
+arr[0][1]=2; 
+arr[0][2]=3; 
+arr[1][0]=4; 
+arr[1][1]=5; 
+arr[1][2]=6; 
+
+Passing Arrays to Methods:
+Just as you can pass primitive type values to methods, you can also pass arrays to methods. For example, the following method displays the elements in an int array:
+public static void display(int[] arr) {
+for (int i = 0; i < arr.length; i++) {
+System.out.print(arr[i] + " ");
+}
+}
+
+Returning an Array from a Method:
+A method may also return an array. For example, the method shown below returns an array that is the copy of another array:
+public static int[] copyarray(int[] list) {
+int[] result = new int[list.length];
+
+for (int i = 0; i < list.length - 1 ; i++) {
+result[i] = list[i];
+}
+return result;
+}
+
+Arrays Methods :
+Arrays.binarySearch(Object[] a, Object key)
+Searches the specified array of Object ( Byte, Int , double, etc.) for the specified value using the binary search algorithm. The array must be sorted prior to making this call. This returns index of the search key.
+
+Arrays.equals(long[] a, long[] a2)
+Returns true if the two specified arrays of longs are equal to one another. Two arrays are considered equal if both arrays contain the same number of elements, and all corresponding pairs of elements in the two arrays are equal.
+
+Arrays.fill(int[] a, int val)
+Assigns the specified int value to each element of the specified array of ints. Same method could be used by all other primitive data types (Byte, short, Int etc.)
+
+Arrays.sort(Object[] a)
+Sorts the specified array of objects into ascending order, according to the natural ordering of its elements. Same method could be used by all other primitive data types ( Byte, short, Int, etc.)
+	</pre>
+
+</body>
+</html>

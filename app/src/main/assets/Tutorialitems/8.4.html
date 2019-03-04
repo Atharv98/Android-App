@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bg bgcolor="black" text="red">
+	<h1><center>8.4 Accessing Interface</center></h1>
+	<pre>
+
+interfaces can be used to declare a set of constants that can be used in different classes. 
+This is similar to creating header files in c++ to contain large number of constants.
+
+Since such interfaces do not contain methods,there is no need to worry about implementing any methods. 
+
+The constant value will be available to any class that implements the interface.
+The values can be used in any method, as part of any variable declaration, or anywhere where we can use a final value.
+
+Example:
+interface A 
+{
+int m=10;
+int n=50;
+}
+class B implements A
+{ 
+int x=m;
+void methodB(int size)
+{
+
+	if: size < n
+}
+}
+
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bg bgcolor="black" text="red">
+<h1><center>5.4 Do While loop</center></h1>
+<pre>
+	The while loop makes a test condition before the loop is executed.Therefore, the body of the loop may not be executed at all if the condition is not satisfied at the very first attempt. 
+
+On some occasions it might be necessary to execute the body of the loop before the test is performed.
+Such situations can be handled with the help of the do statement.
+
+SYNTAX
+do {
+//statement(s)...
+} while (condition);
+
+On reaching the do statement, program evaluate the body of loop first. 
+At the end of the loop, the condition in the while statement is evaluated. If the condition is true, the program continues to evaluate the body of loop again and again till condition becomes false.
+
+int i =0;
+do
+{
+System.out.println("i is : " + i);
+i++;
+}while(i < 5);
+
+
+Output would be
+i is : 0
+i is : 1
+i is : 2
+i is : 3
+i is : 4
+</pre>
+</body>
+</html>

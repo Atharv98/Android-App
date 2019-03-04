@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bg bgcolor="black" text="red">
+	<h1><center>12.4 Designing a Web Page</center></h1>
+	<pre>
+		
+
+Java applet are programs that reside on web page. A web page is basically made up of text and HTML tags that can be interpreted by a web browser or an applet viewer.
+
+HTML files should be stored in the same directory as the compiled code of the applets.
+
+A web page is marked by an opening HTML tag <HTML> and closing HTML tag </HTML> and is divided into the following three major parts:
+1. Comment Section
+2. Head Section
+3. Body Section
+
+Comment Section
+This is very first section of any web page containing the comments about the web page functionality. A comment line begins with <! And ends with a > and the web browsers will ignore the text enclosed between them. The comments are optional and can be included anywhere in the web page. 
+
+Head Section
+This section contains title, heading and sub heading of the web page. The head section is defined with a starting <Head> tag and closing </Head> tag.
+
+<Head>
+<Title>Hello World Applet</Title>
+</Head> 
+
+Body Section
+The entire information and behaviour of the web page is contained in it, It defines what the data placed and where on to the screen. It describes the color, location, sound etc. of the data or information that is going to be placed in the web page.
+
+<body bg bgcolor="black" text="red">
+<h1>Hi, This is My First Java Applet on the Web!</h1>
+</body> 
+
+Applet Tag
+The <Applet...> tag supplies the name of the applet to be loaded and tells the browser how much space the applet requires.
+The <Applet> tag given below specifies the minimum requirements to place the Hellojava applet on a web page.
+
+<Applet code = "Hellojava.class" 
+width = 400
+Height = 200 >
+</Applet> 
+
+This HTML code tells the browser to load the compiled java applet Hellojava.class, which is in the same directory as this HTML file.
+It also specifies the display area for the applet output as 400 pixels width and 200 pixels height.
+
+After you create this file, you can execute the HTML file called RunApp.html (say) on the command line.
+c:\ appletviewer RunApp.html
+	</pre>
+
+</body>
+</html>

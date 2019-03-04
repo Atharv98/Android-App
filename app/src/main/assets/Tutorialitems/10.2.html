@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bg bgcolor="black" text="red">
+	<h1><center>10.2 Stopping & blocking</center></h1>
+	<pre>
+		
+
+Stopping a thread:
+Whenever we want to stop a thread from running further,we may do so by calling its stop() method, like:
+aThread.stop();
+
+This statement cause the thread to move to the dead state.The stop method may used when the premature death of a thread is desired.
+
+Blocking a thread:
+A thread can also be temporarily suspended or blocked from entering into the runnable and subsequently running state by using either of the following thread methods:
+sleep()	
+//blocked for a specified time
+
+suspend()	
+//blocked until further orders
+
+wait()	
+//blocked until certain condition occurs
+These methods cause the thread to go into the blocked(or not-runnable) state.
+	</pre>
+
+</body>
+</html>

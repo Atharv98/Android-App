@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="black" text="yellow">
+	
+<h1><center>2.1 Environment Setup</center></h1>
+
+<h5>We need to install the Java Development Toolkit aka JDK, which is bundled with the Java Runtime Environment.
+At this moment, the latest JDK versions is JDK 8.
+All you have to do is head to the main download page provided by Oracle , and download the latest version that you will find.
+
+Follow the instructions to download java and run the .exe to install Java on your machine. Once you installed Java on your machine, you would need to set environment variables to point to correct installation directories.
+
+Assuming you have installed Java in
+c:\Program Files\java\jdk
+1. Right-click on 'My Computer' and select 'Properties'.
+2. Click on the 'Environment variables' button under the 'Advanced' tab.
+3. Now, alter the 'Path' variable so that it also contains the path to the Java executable.
+
+Example, if the path is currently set to 
+'C:\WINDOWS\SYSTEM32',
+then change your path to read 
+'C:\WINDOWS\SYSTEM32; c:\Program Files\java\jdk\bin'.
+
+Setting up the path for Linux, Ubuntu, UNIX, Solaris
+Environment variable PATH should be set to point to where the Java binaries have been installed.
+Refer to your shell documentation if you have trouble doing this.
+
+Example, if you use bash as your shell, then you would add the following line to the end of your 
+'.bashrc: export PATH=/path/to/java:$PATH'
+
+Up until now we have installed a variety of tools towards setting up our Java Development environment. 
+
+Since the JDK is already installed (from step one) we could actually jump to coding just by using our text editor of choice (NotePad++, TextPad, NotePad, Ultra Edit etc) and invoking the javac and java commands from the command line.
+
+Free IDE for Java
+Netbeans: NetBeans IDE provides Java developers with all the tools needed to create professional desktop, mobile and enterprise applications.
+
+Eclipse:Eclipse is another free Java IDE for developers and programmers and it is mostly written in Java. Eclipse lets you create various cross platform Java applications for use on mobile, web, desktop and enterprise domains.
+</h5>
+
+
+</body>
+</html>

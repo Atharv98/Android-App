@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bg bgcolor="black" text="red">
+<h1><center>6.3 Constructors</center></h1>
+<pre>
+Constructor in java is a special type of method that is used to initialize the object.
+Java constructor is invoked at the time of object creation. It constructs the values i.e. provides data for the object therefore it is known as constructor.
+
+Rules for creating java constructor
+There are basically two rules defined for the constructor.
+- Constructor name must be same as its class name
+- Constructor must have no explicit return type
+
+Types of java constructors
+There are two types of constructors:
+Default constructor (no-arg constructor)
+Parameterized constructor
+
+Java Default Constructor
+A constructor that have no parameter is known as default constructor.
+Syntax of default constructor:
+<class_name>(){ } 
+
+Example
+In this example, we are creating the no-arg constructor in the Bike class. It will be invoked at the time of object creation.
+
+class Bike1{ 
+Bike1(){
+System.out.println("Bike is created");
+} 
+public static void main(String args[]){ 
+Bike1 b=new Bike1(); 
+} 
+} 
+
+Java parameterized constructor
+A constructor that have parameters is known as parameterized constructor.
+
+Why use parameterized constructor?
+Parameterized constructor is used to provide different values to the distinct objects.
+
+Example
+In this example, we have created the constructor of Student class that have two parameters. We can have any number of parameters in the constructor.
+
+class Student4{ 
+int id; 
+String name; 
+Student4(int i,String n){ 
+id = i; 
+name = n; 
+} 
+
+void display(){
+System.out.println(id+" "+name);
+} 
+
+public static void main(String args[]){ 
+Student4 s1 = new Student4(111,"Karan"); 
+Student4 s2 = new Student4(222,"Aryan"); 
+s1.display(); 
+s2.display();
+
+
+} 
+} 
+	</pre>
+</body>
+</html>

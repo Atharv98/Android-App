@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bg bgcolor="black" text="red">
+	<h1><center>5.2 Switch statement</center></h1>
+	<pre>
+
+A switch statement is used instead of nested if...else statements. It is multiple branch decision statement. 
+A switch statement tests a variable with list of values for equivalence. Each value is called a case. The case value must be a constant i.
+
+SYNTAX
+switch(expression){
+case constant:
+//sequence of optional statements
+break; //optional
+case constant:
+//sequence of optional statements
+break; //optional
+.
+.
+.
+default : //optional
+//sequence of optional statements
+}
+
+
+Individual case keyword and a semi-colon (:) is used for each constant. 
+Switch tool is used for skipping to particular case, after jumping to that case it will execute all statements from cases beneath that case this is called as ''Fall Through''.
+
+In the example below, for example, if the value 2 is entered, then the program will print two one something else!
+
+switch(i)
+{
+case 4: System.out.println(''four''); 
+break;
+case 3: System.out.println(''three''); 
+break;
+case 2: System.out.println(''two'');
+case 1: System.out.println(''one'');
+default: System.out.println(''something else!'');
+}
+
+To avoid fall through, the break statements are necessary to exit the switch.
+If value 4 is entered, then in case 4 it will just print four and ends the switch.
+
+The default label is non-compulsory, It is used for cases that are not present.
+</pre>
+
+</body>
+</html>

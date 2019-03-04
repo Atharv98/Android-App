@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="black" text="yellow">
+	<h1><center>3.4 Type Casting</center></h1>
+	<pre>
+Casting is an operation that converts a value of one data type into a value of another data type. 
+The syntax for type casting is to give the target type in parenthesis followed by the variable name.
+
+Example:
+float f = (float) 10.1;
+Int i = (int)f; 
+in this case, value of i is 10, the fractional part is discarded, while using type casting there is a chance of lost information that might lead to inaccurate result.
+
+Example:
+int i = 10000;
+byte s = (short) i;
+In this example value of s becomes 10, which is totally distorted, to ensure correctness; 
+you can test if the value is in the correct target type range before using type casting. 
+
+Casts that results in no loss of information
+byte => short, char, int, long, float, double
+
+short => int, long, float, double
+
+char => int, long, float, double
+
+int => long, float, double
+
+long => float, double
+
+float => double
+</pre>
+
+</body>
+</html>

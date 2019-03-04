@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="black" text="yellow">
+	<h1><center>13.3 Character Stream</center></h1>
+	<pre>
+		
+
+Java Character streams are used to perform input and output for 16-bit unicode. Though there are many classes related to character streams but the most frequently used classes are , Reader and Writer.
+Though internally FileReader uses FileInputStream and FileWriter uses FileOutputStream but here major difference is that FileReader reads two bytes at a time and FileWriter writes two bytes at a time.
+
+Reader
+- It is an abstract class used to input character.
+- It implements 2 interfaces Closable & Readable.
+- Methods in this class throws IO Exception(Except markSupported()).
+
+Writer
+- Writer is an abstract class used to output character.
+- It implements 3 interfaces Closable, Flushable & Appendable.
+
+methods of Reader abstract class
+abstract void close()
+close the source of input.
+
+void mark(int numChars)
+it marks a point to input stream that will stay valid until numChars are read.
+
+boolean markSupported()
+it returns true if mark() support by stream.
+
+int read()
+it returns integer of next available character from input
+
+int read(char buffer[])
+it read up to the length of byte in buffer
+
+abstract read(byte buffer[], int offset, int numBytes)
+it read up to the length of character in buffer starting form offset
+
+void reset()
+it reads the input pointer.
+
+long skip(long numBytes)
+it returns the character ignored.
+
+boolean ready()
+if input request will not wait returns true, otherwise false
+
+methods of Writer abstract class
+write append(char ch) 
+It append the 'ch' character at last of output stream
+
+write append(charSequence chars)
+append the chars at end of output stream.
+
+write append(charSequence chars, int begin, int end)
+append the characters specified in the range.
+
+abstract void close()
+close the output stream
+
+abstract void flush()
+it flush the output buffer.
+
+void write(char buffer[])
+writes array of character to output stream.
+
+abstract void write(char buffer[], int offset, int numChars)
+it writes a range of characters from buffer starting form offset
+
+void write(String str)
+it writes the str to output stream
+
+void write(String str, int offset, int numChars)
+it writes a range of character from the string str starting at offset.
+	</pre>
+
+</body>
+</html>

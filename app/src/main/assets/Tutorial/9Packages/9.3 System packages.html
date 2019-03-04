@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="black" text="yellow">
+	<h1><center>9.3 System packages</center></h1>
+	<pre>
+		
+
+The package named java contains the package awt,which in turn contains various classes required for implementing graphical user interface.
+
+There are two ways of accessing the classes stored in a package. 
+
+The first approach is to use the fully qualified class name of the class that we want to use.
+
+for example, if we want to refer to the class Color in the awt package, then we may do so as follows
+
+java.awt.Colour
+
+Notice that awt is a package within the package java and the hierarchy is represented by separating the levels with dots.
+
+This approach is perhaps the best and easiest one if we need to access the class only once or when we need not have to access any other classes of the package. 
+But, in many situations, we might want to use a class in a number of places in the program or we may like to use many of the classes contained in a package.
+
+We may achieve this easily as follows: 
+
+import packagename.classname;
+or
+import packagename.* 
+These are known as import statements and must appear at the top of the file, before any class declarations, import is a keyword.
+
+	</pre>
+
+</body>
+</html>

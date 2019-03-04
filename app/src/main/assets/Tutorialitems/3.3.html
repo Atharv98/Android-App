@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<pre></pre>
+<body bg bgcolor="black" text="red">
+	<h1><center>3.3 Variable scope</center></h1>
+
+There are three kinds of variables in Java:
+
+Local Variable:
+1. A variable that is declared inside the method is called local variable.
+2. Local variables are created when the method, constructor or block is entered and the variable will be destroyed once it exits the method, constructor or block.
+3. Access modifiers cannot be used for local variables.
+4. Local variables are visible only within the declared method, constructor or block.
+5. There is no default value for local variables so local variables should be declared and an initial value should be assigned before the first use.
+
+Instance Variable
+1. A variable that is declared inside the class but outside the method is called instance variable . It is not declared as static.
+2. Instance variables are created when an object is created with the use of the keyword 'new' and destroyed when the object is destroyed.
+3. Instance variables hold values that must be referenced by more than one method, constructor or block, or essential parts of an object's state that must be present throughout the class.
+4. Instance variables can be declared in class level before or after use.
+5. Access modifiers can be given for instance variables.
+6. Instance variables have default values. For numbers the default value is 0, for Booleans it is false and for object references it is null. 
+Values can be assigned during the declaration or within the constructor.
+7. Instance variables can be accessed directly by calling the variable name inside the class.
+ However within static methods and different class ( when instance variables are given accessibility) should be called using the fully qualified name . ObjectReference.VariableName.
+
+Class/static variables:
+1. A variable that is declared as static is called static variable. It cannot be local.
+2. Class variables also known as static variables are declared with the static keyword in a class, but outside a method, constructor or a block.
+3. There would only be one copy of each class variable per class, regardless of how many objects are created from it.
+4. Static variables are stored in static memory.
+5. Static variables are created when the program starts and destroyed when the program stops.
+6. Visibility is similar to instance variables.
+7. Static variables can be accessed by calling with the class name ClassName.VariableName.
+
+Example
+class A{ 
+int data=50;
+//instance variable 
+
+static int m=100;
+//static variable 
+
+void method(){ 
+int n=90;
+//local variable 
+} 
+}//end of class A
+
+
+	</pre>
+</body>
+</html>
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bg bgcolor="black" text="red">
+<h1><center>6.5 Method Overriding</center></h1>
+<pre>
+	
+
+If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in java.
+In other words, If subclass provides the specific implementation of the method that has been provided by one of its parent class, it is known as method overriding.
+
+Rules for method overriding:
+1. The argument list should be exactly the same as that of the overridden method.
+2. The return type should be the same or a subtype of the return type declared in the original overridden method in the superclass.
+3. The access level cannot be more restrictive than the overridden method's access level.
+4. Instance methods can be overridden only if they are inherited by the subclass.
+5. A method declared final cannot be overridden.
+6. A method declared static cannot be overridden but can be re-declared.
+7. If a method cannot be inherited, then it cannot be overridden.
+8. A subclass within the same package as the instance's superclass can override any superclass method that is not declared private or final.
+9. A subclass in a different package can only override the non-final methods declared public or protected.
+10. Constructors cannot be overridden.
+
+Advantage:
+The main advantage of method overriding is that the class can give its own specific implementation to a inherited method without even modifying the parent class(base class). 
+
+Example: 
+class Base{
+public void display()
+{
+System.out.println("this is base class");
+}
+}
+
+class Child extends Base{
+public void display(){
+System.out.println("this is child class");
+}
+public static void main( String args[]) {
+Child obj = new Child();
+obj.display();
+}
+}
+
+output
+this is child class
+
+Using the super keyword:
+When invoking a base class version of an overridden method the super keyword is used. class Base{
+public void display()
+{
+System.out.println("this is base class");
+}
+}
+
+class Child extends Base{
+public void display(){
+super.display(); // invokes the super class method System.out.println("this is child class");
+}
+public static void main( String args[]) {
+Child obj = new Child();
+obj.display();
+}
+}
+
+output
+this is base class
+this is child class
+	</pre>
+</body>
+</html>

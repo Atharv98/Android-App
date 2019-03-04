@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="black" text="yellow">
+	<h1><center></center></h1>
+	<pre>
+		10.4 Exception & priority
+
+Exception
+IllegalArgumentException
+if the priority is not in the range MIN_PRIORITY to MAX_PRIORITY.
+SecurityException 
+if the current thread cannot modify this thread.
+
+Priority of a Thread (Thread Priority):
+Java permits us to set the priority of a thread using the setPriority() method as follows:
+
+ThreadName.setPriority(intNumber);
+
+Each thread have a priority. Priorities are represented by a number between 1 and 10. In most cases, thread schedular schedules the threads according to their priority (known as preemptive scheduling). But it is not guaranteed because it depends on JVM specification that which scheduling it chooses.
+
+3 constants defiend in Thread class:
+public static int MIN_PRIORITY
+public static int NORM_PRIORITY
+public static int MAX_PRIORITY
+
+Default priority of a thread is 5 (NORM_PRIORITY). 
+The value of MIN_PRIORITY is 1.
+The value of MAX_PRIORITY is 10.
+
+Example:
+class TestPriority extends Thread{ 
+public void run(){ 
+System.out.println("running thread name is:"+Thread.currentThread().getName());
+System.out.println("running thread priority is:"+Thread.currentThread().getPriority()); 
+} 
+
+public static void main(String args[]){ 
+TestPriority1 m1=new TestPriority1(); 
+TestPriority1 m2=new TestPriority1(); 
+m1.setPriority(Thread.MIN_PRIORITY); 
+m2.setPriority(Thread.MAX_PRIORITY); 
+m1.start(); 
+m2.start(); 
+} 
+} 
+
+Output:
+running thread name is:Thread-0
+running thread priority is:10
+running thread name is:Thread-1
+running thread priority is:1
+	</pre>
+
+</body>
+</html>

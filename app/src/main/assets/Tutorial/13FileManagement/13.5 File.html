@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="black" text="yellow">
+	<h1><center>13.5 File</center></h1>
+	<pre>
+		
+
+- File class is used to support with Files and File systems.
+- File class describes properties of itself.
+- File class has its objects which is used to handle or get data stored in disk.
+- File class has some constructors which is used to describe the file path.
+
+Constructors : 
+File(String directoryPath)
+File(String directoryPath, String filename)
+File(File dirObj, String filename)
+File(URl uriObj)
+
+FileInputStream:
+This stream is used for reading data from the files. Objects can be created using the keyword new and there are several types of constructors available.
+
+Following constructor takes a file name as a string to create an input stream object to read the file.:
+InputStream f = new FileInputStream("C:/java/hello");
+
+Following constructor takes a file object to create an input stream object to read the file. First we create a file object using File() method as follows:
+File f = new File("C:/java/hello");
+InputStream f = new FileInputStream(f);
+
+FileOutputStream:
+FileOutputStream is used to create a file and write data into it. The stream would create a file, if it doesn't already exist, before opening it for output.
+
+Here are two constructors which can be used to create a FileOutputStream object.
+Following constructor takes a file name as a string to create an input stream object to write the file:
+OutputStream f = new FileOutputStream("C:/java/hello") 
+
+Following constructor takes a file object to create an output stream object to write the file. First, we create a file object using File() method as follows:
+File f = new File("C:/java/hello");
+OutputStream f = new FileOutputStream(f);
+
+I/O Exceptions
+EOFException
+It indicates the signal are reached to end of file during input.
+
+FileNotFoundException
+It indicates that the file not found at specified path.
+
+InterruptedIOException
+It indicates that an I/O Exception has occurred
+
+I/O Exception
+It indicates I/O Exception some sort has occurred.
+	</pre>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bg bgcolor="black" text="red">
+	<h1><center>6.8 Types of Inheritance</center></h1>
+	<pre>
+Syntax of Java Inheritance
+Single inheritance is damn easy to understand. When a class extends another one class only then we call it a single inheritance. The below example shows that class B extends only one class which is A. Here A is a parent class of B and B would be a child class of A.
+
+class A{
+}
+class B extends A{
+} 
+
+2) Multiple Inheritance
+''Multiple Inheritance'' refers to the concept of one class extending (Or inherits) more than one base class. The inheritance we learnt earlier had the concept of one base class or parent. The problem with ''multiple inheritance'' is that the derived class will have to manage the dependency on two base classes.
+
+Most of the new OO languages like Small Talk, Java, C# do not support Multiple inheritance. Multiple Inheritance is supported in C++.
+
+class A{
+}
+class B{
+}
+class C extends A,B{
+}
+
+3) Multilevel Inheritance
+Multilevel inheritance refers to a mechanism in OO technology where one can inherit from a derived class, thereby making this derived class the base class for the new class. As you can see in below example C is subclass or child class of B and B is a child class of A.
+
+class A{
+}
+class B extends A{
+}
+class C extends B{
+}
+
+4) Hierarchical Inheritance
+In such kind of inheritance one class is inherited by many sub classes. In below example class B,C and D inherits the same class A. A is parent class (or base class) of B,C & D.
+
+class A{
+}
+class B extends A{
+}
+class C extends A{
+}
+class D extends A{
+}
+
+5) Hybrid Inheritance
+In simple terms you can say that Hybrid inheritance is a combination of Single and Multiple inheritance. 
+
+A hybrid inheritance can be achieved in the java in a same way as multiple inheritance can be!! Using interfaces. yes you heard it right. By using interfaces you can have multiple as well as hybrid inheritance in Java.
+	</pre>
+
+</body>
+</html>

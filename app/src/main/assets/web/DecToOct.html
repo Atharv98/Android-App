@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Decimal To Octal</title>
+</head>
+<body bgcolor="black" text="yellow">
+<pre>
+	import java.util.Scanner;
+
+public class Decimal_Octal {
+	Scanner scan;
+	int num;
+
+	void getVal() {
+		System.out.println("Decimal to Octal");
+		scan = new Scanner(System.in);
+
+		System.out.println("\nEnter the number :");
+		num = Integer.parseInt(scan.nextLine());
+	}
+
+		void convert() {
+			String octal = Integer.toOctalString(num);
+			System.out.println("Octal Value is : " + octal);
+		}
+
+}
+		class MainClass {
+			public static void main(String args[]) {
+				Decimal_Octal obj = new Decimal_Octal();
+
+				obj.getVal();
+				obj.convert();
+
+			}
+
+
+		}
+
+
+</pre>
+
+</body>
+</html>

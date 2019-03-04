@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_prev"
+        android:title="Prev"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_skip_previous_black_24dp"></item>
+
+    <item
+        android:id="@+id/menu_next"
+        android:title="Next"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_skip_next_black_24dp"
+        ></item>
+
+</menu>

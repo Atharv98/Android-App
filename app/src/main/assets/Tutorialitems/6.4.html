@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bg bgcolor="black" text="red">
+<h1><center>6.4 Method Overloading</center></h1>
+<pre>
+If a class have multiple methods by same name but different parameters, it is known as Method Overloading.
+If we have to perform only one operation, having same name of the methods increases the readability of the program.
+
+Suppose you have to perform addition of the given numbers but there can be any number of arguments, if you write the method such as a(int,int) for two parameters, and b(int,int,int) for three parameters then it may be difficult for you as well as other programmers to understand the behaviour of the method because its name differs. 
+
+So, we perform method overloading to figure out the program quickly. 
+
+Argument lists could differ in:
+1. Number of parameters.
+2. Data type of parameters.
+3. Sequence of Data type of parameters.
+
+Method overloading is also known as Static Polymorphism.
+
+Points to Note:
+1. Static Polymorphism is also known as compile time binding or early binding.
+2. Static binding happens at compile time. Method overloading is an example of static binding where binding of method call to its definition happens at Compile time.
+
+There are two ways to overload the method in java
+1. By changing number of arguments
+2. By changing the data type
+
+1. By changing number of arguments
+class DisplayOverloading
+{
+public void disp(char c)
+{
+System.out.println(c);
+}
+public void disp(char c, int num) 
+{
+System.out.println(c + " "+num);
+}
+}
+
+class Sample
+{
+public static void main(String args[])
+{
+DisplayOverloading obj = new DisplayOverloading();
+obj.disp('a');
+obj.disp('a',10);
+}
+}
+
+Output:
+a
+a 10
+
+2. By changing the data type
+class DisplayOverloading
+{
+public void disp(char c)
+{
+System.out.println(c);
+}
+public void disp(int c)
+{
+System.out.println(c );
+}
+}
+
+class Sample2
+{
+public static void main(String args[])
+{
+DisplayOverloading obj = new DisplayOverloading();
+obj.disp('a');
+obj.disp(5);
+}
+}
+
+Output:
+a
+5
+	</pre>
+</body>
+</html>

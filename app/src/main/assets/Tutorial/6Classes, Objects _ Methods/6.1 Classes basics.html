@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="black" text="yellow">
+<h1><center>6.1 Classes basics</center></h1>
+<pre>
+Classes
+Java is a true object-oriented language and therefore the underlying structure of all Java programs is classes.
+A class is nothing but a blueprint or a template for creating different objects which defines its properties and behaviours. Java class objects exhibit the properties and behaviours defined by its class. A class can contain fields and methods to describe the behaviour of an object.
+
+Defining a class
+Once the class type has been defined, we can create ''variables'' of that type using declaration that are similar to the basic type declarations. In Java, these variables are termed as instances of classes, which are the actual objects.
+The basic form of a class definition is :
+
+class classname [extends superclassname]
+{
+ [ filelds declaration; ]
+ [ methods declaration; ]
+}
+
+Fields
+A Java field is a variable inside a class. For instance, in a class representing an employee, the Employee class might contain the following fields:
+-name
+-position
+-salary
+-hiredDate
+
+Field Declaration Syntax
+A Java field is declared using the following syntax:
+
+[access_modifier] [static] [final] type name [= initial value] ;
+The square brackets [ ] around some of the keywords mean that this option is optional. Only type and name are required.
+
+Methods
+Methods are nothing but members of a class that provide a service for an object or perform some business logic. Java fields and member functions names are case sensitive. Current states of a class's corresponding object are stored in the object's instance variables. Methods define the operations that can be performed in Java programming.
+
+Method Declaration Syntax
+type methodname (parameter-list)
+{
+  method body;
+}
+
+Below is an example showing the Objects and Classes of the Cube class that defines 3 fields namely length, breadth and height. Also the class contains a member function getVolume().
+
+public class Cube {
+int length;
+int breadth;
+int height;
+public int getVolume() {
+ return (length * breadth * height);
+}
+}
+	</pre>
+</body>
+</html>

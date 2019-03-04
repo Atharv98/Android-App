@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="black" text="yellow">
+	<h1><center>8.1 Defining Interfaces</center></h1>
+	<pre>
+		
+
+An interface is a reference type in Java, it is similar to class, it is a collection of abstract methods.
+
+A class implements an interface, thereby inheriting the abstract methods of the interface. Along with abstract methods an interface may also contain constants, default methods, static methods, and nested types. Method bodies exist only for default methods and static methods.
+
+Writing an interface is similar to writing a class. But a class describes the attributes and behaviours of an object. And an interface contains behaviours that a class implements.
+
+Unless the class that implements the interface is abstract, all the methods of the interface need to be defined in the class.
+
+The General form of an interface definition is:
+[visibility] interface InterfaceName [extends other interfaces]
+{
+variables declarations;
+abstract method declarations;
+}
+
+here, interface is the keyword and InterfaceName is any valid java variable(just like class name).
+variables are declared as follows:
+static final tyoe VariableName=Value; 
+
+example:
+interface printable{
+void print(); 
+} 
+
+class A6 implements printable{ 
+public void print(){System.out.println("Hello");} 
+
+public static void main(String args[]){ 
+A6 obj = new A6(); 
+obj.print(); 
+} 
+} 
+
+Output: Hello
+	</pre>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<resources>
+    <string name="app_name">Learn Java</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="toolbar_title">PROGRAMS</string>
+
+
+    <string-array name="url_list">
+        <item>file:///android_asset/web/helloworld.html</item>
+        <item> file:///android_asset/web/addition.html</item>
+        <item>file:///android_asset/web/ifElse.html</item>
+        <item>file:///android_asset/web/Whileloop.html</item>
+        <item>file:///android_asset/web/Dowhile.html</item>
+        <item>file:///android_asset/web/ForLoop.html</item>
+        <item> file:///android_asset/web/SwitchCase.html</item>
+        <item>file:///android_asset/web/Even_Odd.html</item>
+        <item>file:///android_asset/web/largestnum.html</item>
+        <item>file:///android_asset/web/Prime.html</item>
+        <item>file:///android_asset/web/Palindrome.html</item>
+        <item>file:///android_asset/web/Factorial.html</item>
+        <item>file:///android_asset/web/FactusingRecurssion.html</item>
+        <item>file:///android_asset/web/AreaCircle.html</item>
+        <item>file:///android_asset/web/AreaRectangle.html</item>
+        <item>file:///android_asset/web/BitwiseAddition.html</item>
+        <item>file:///android_asset/web/GCD_LCM.html</item>
+        <item>file:///android_asset/web/LeapYear.html</item>
+        <item>file:///android_asset/web/Armstrong.html</item>
+        <item>file:///android_asset/web/Swapping.html</item>
+        <item>file:///android_asset/web/SwapWithoutVar.html</item>
+        <item>file:///android_asset/web/Floyd.html</item>
+        <item>file:///android_asset/web/Pascal.html</item>
+        <item>file:///android_asset/web/BintoDEc.html</item>
+        <item>file:///android_asset/web/DectoBin.html</item>
+        <item>file:///android_asset/web/DectoHex.html</item>
+        <item>file:///android_asset/web/DecToOct.html</item>
+        <item>file:///android_asset/web/HexToDec.html</item>
+        <item>file:///android_asset/web/OctToDecimal.html</item>
+        <item>file:///android_asset/web/Constructor.html</item>
+        <item>file:///android_asset/web/Thread.html</item>
+        <item>file:///android_asset/web/Exception.html</item>
+        <item>file:///android_asset/web/Palindrome1.html</item>
+        <item>file:///android_asset/web/StringCase.html</item>
+        <item>file:///android_asset/web/StringLength.html</item>
+        <item>file:///android_asset/web/StringCompare.html</item>
+        <item>file:///android_asset/web/StringConcat.html</item>
+        <item>file:///android_asset/web/StringReverse.html</item>
+        <item>file:///android_asset/web/StringTrim.html</item>
+        <item>file:///android_asset/web/RemoveVowels.html</item>
+        <item>file:///android_asset/web/StringRemoveCharac.html</item>
+        <item>file:///android_asset/web/ReverseStringArray.html</item>
+        <item>file:///android_asset/web/CharArrayToString.html</item>
+        <item>file:///android_asset/web/LargestSmallest.html</item>
+        <item>file:///android_asset/web/AverageOfAnArray.html</item>
+        <item>file:///android_asset/web/ArrayCopy.html</item>
+        <item>file:///android_asset/web/DeleteElemFromArray.html</item>
+        <item>file:///android_asset/web/2DArrayToString.html</item>
+        <item>file:///android_asset/web/MatrixMultiplication.html</item>
+        <item>file:///android_asset/web/MatrixTransport.html</item>
+        <item>file:///android_asset/web/InterfaceExample.html</item>
+        <item>file:///android_asset/web/LinearSearch.html</item>
+        <item>file:///android_asset/web/BinarySearch.html</item>
+        <item>file:///android_asset/web/BubbleSort.html</item>
+        <item>file:///android_asset/web/SelectionSort.html</item>
+        <item>file:///android_asset/web/InsertionSort.html</item>
+        <item>file:///android_asset/web/QuickSort.html</item>
+        <item>file:///android_asset/web/MergeSort.html</item>
+        <item>file:///android_asset/web/MultipleCatch.html</item>
+        <item>file:///android_asset/web/CreateFile.html</item>
+        <item>file:///android_asset/web/CreateDirectory.html</item>
+        <item>file:///android_asset/web/ListOfDirectory.html</item>
+        <item>file:///android_asset/web/DeleteFileFRomDirectory.html</item>
+        <item>file:///android_asset/web/ModificationTime.html</item>
+        <item>file:///android_asset/web/CurrentDate_Time.html</item>
+        <item>file:///android_asset/web/DisplayIpAddress.html</item>
+
+
+    </string-array>
+
+    <string-array name="output_url_list">
+        <item>file:///android_asset/Outputs/1.html</item>
+        <item>file:///android_asset/Outputs/2.html</item>
+        <item>file:///android_asset/Outputs/3.html</item>
+        <item>file:///android_asset/Outputs/4.html</item>
+        <item>file:///android_asset/Outputs/5.html</item>
+        <item>file:///android_asset/Outputs/6.html</item>
+        <item>file:///android_asset/Outputs/7.html</item>
+        <item>file:///android_asset/Outputs/9.html</item>
+        <item>file:///android_asset/Outputs/10.html</item>
+        <item>file:///android_asset/Outputs/11.html</item>
+        <item>file:///android_asset/Outputs/12.html</item>
+        <item>file:///android_asset/Outputs/13.html</item>
+        <item>file:///android_asset/Outputs/14.html</item>
+        <item>file:///android_asset/Outputs/15.html</item>
+        <item>file:///android_asset/Outputs/16.html</item>
+        <item>file:///android_asset/Outputs/17.html</item>
+        <item>file:///android_asset/Outputs/18.html</item>
+        <item>file:///android_asset/Outputs/19.html</item>
+        <item>file:///android_asset/Outputs/20.html</item>
+        <item>file:///android_asset/Outputs/21.html</item>
+        <item>file:///android_asset/Outputs/22.html</item>
+        <item>file:///android_asset/Outputs/23.html</item>
+        <item>file:///android_asset/Outputs/24.html</item>
+        <item>file:///android_asset/Outputs/25.html</item>
+        <item>file:///android_asset/Outputs/26.html</item>
+        <item>file:///android_asset/Outputs/27.html</item>
+        <item>file:///android_asset/Outputs/28.html</item>
+        <item>file:///android_asset/Outputs/29.html</item>
+        <item>file:///android_asset/Outputs/30.html</item>
+        <item>file:///android_asset/Outputs/31.html</item>
+        <item>file:///android_asset/Outputs/32.html</item>
+        <item>file:///android_asset/Outputs/33.html</item>
+        <item>file:///android_asset/Outputs/35.html</item>
+        <item>file:///android_asset/Outputs/36.html</item>
+        <item>file:///android_asset/Outputs/37.html</item>
+        <item>file:///android_asset/Outputs/38.html</item>
+        <item>file:///android_asset/Outputs/39.html</item>
+        <item>file:///android_asset/Outputs/40.html</item>
+        <item>file:///android_asset/Outputs/41.html</item>
+        <item>file:///android_asset/Outputs/42.html</item>
+        <item>file:///android_asset/Outputs/43.html</item>
+        <item>file:///android_asset/Outputs/44.html</item>
+        <item>file:///android_asset/Outputs/45.html</item>
+        <item>file:///android_asset/Outputs/46.html</item>
+        <item>file:///android_asset/Outputs/47.html</item>
+        <item>file:///android_asset/Outputs/48.html</item>
+        <item>file:///android_asset/Outputs/49.html</item>
+        <item>file:///android_asset/Outputs/50.html</item>
+        <item>file:///android_asset/Outputs/51.html</item>
+        <item>file:///android_asset/Outputs/52.html</item>
+        <item>file:///android_asset/Outputs/53.html</item>
+        <item>file:///android_asset/Outputs/54.html</item>
+        <item>file:///android_asset/Outputs/55.html</item>
+        <item>file:///android_asset/Outputs/56.html</item>
+        <item>file:///android_asset/Outputs/57.html</item>
+        <item>file:///android_asset/Outputs/58.html</item>
+        <item>file:///android_asset/Outputs/59.html</item>
+        <item>file:///android_asset/Outputs/60.html</item>
+        <item>file:///android_asset/Outputs/61.html</item>
+        <item>file:///android_asset/Outputs/62.html</item>
+        <item>file:///android_asset/Outputs/63.html</item>
+        <item>file:///android_asset/Outputs/64.html</item>
+        <item>file:///android_asset/Outputs/65.html</item>
+        <item>file:///android_asset/Outputs/66.html</item>
+        <item>file:///android_asset/Outputs/67.html</item>
+        <item>file:///android_asset/Outputs/68.html</item>
+        <item>file:///android_asset/Outputs/69.html</item>
+
+
+    </string-array>
+
+    <string-array name="tuto_url_list_">
+        <item>file:///android_asset/Tutorialitems/1.1.html</item>
+        <item>file:///android_asset/Tutorialitems/1.2.html</item>
+        <item>file:///android_asset/Tutorialitems/1.3.html</item>
+        <item>file:///android_asset/Tutorialitems/2.1.html</item>
+        <item>file:///android_asset/Tutorialitems/2.2.html</item>
+        <item>file:///android_asset/Tutorialitems/3.1.html</item>
+        <item>file:///android_asset/Tutorialitems/3.2.html</item>
+        <item>file:///android_asset/Tutorialitems/3.3.html</item>
+        <item>file:///android_asset/Tutorialitems/3.4.html</item>
+        <item>file:///android_asset/Tutorialitems/4.1.html</item>
+        <item>file:///android_asset/Tutorialitems/4.2.html</item>
+        <item>file:///android_asset/Tutorialitems/4.3.html</item>
+        <item>file:///android_asset/Tutorialitems/5.1.html</item>
+        <item>file:///android_asset/Tutorialitems/5.2.html</item>
+        <item>file:///android_asset/Tutorialitems/5.3.html</item>
+        <item>file:///android_asset/Tutorialitems/5.4.html</item>
+        <item>file:///android_asset/Tutorialitems/5.5.html</item>
+        <item>file:///android_asset/Tutorialitems/6.1.html</item>
+        <item>file:///android_asset/Tutorialitems/6.2.html</item>
+        <item>file:///android_asset/Tutorialitems/6.3.html</item>
+        <item>file:///android_asset/Tutorialitems/6.4.html</item>
+        <item>file:///android_asset/Tutorialitems/6.5.html</item>
+        <item>file:///android_asset/Tutorialitems/6.6.html</item>
+        <item>file:///android_asset/Tutorialitems/6.7.html</item>
+        <item>file:///android_asset/Tutorialitems/6.8.html</item>
+        <item>file:///android_asset/Tutorialitems/6.9.html</item>
+        <item>file:///android_asset/Tutorialitems/6.10.html</item>
+        <item>file:///android_asset/Tutorialitems/7.1.html</item>
+        <item>file:///android_asset/Tutorialitems/7.2.html</item>
+        <item>file:///android_asset/Tutorialitems/7.3.html</item>
+        <item>file:///android_asset/Tutorialitems/7.4.html</item>
+        <item>file:///android_asset/Tutorialitems/8.1.html</item>
+        <item>file:///android_asset/Tutorialitems/8.2.html</item>
+        <item>file:///android_asset/Tutorialitems/8.3.html</item>
+        <item>file:///android_asset/Tutorialitems/8.4.html</item>
+        <item>file:///android_asset/Tutorialitems/9.1.html</item>
+        <item>file:///android_asset/Tutorialitems/9.2.html</item>
+        <item>file:///android_asset/Tutorialitems/9.3.html</item>
+        <item>file:///android_asset/Tutorialitems/10.1.html</item>
+        <item>file:///android_asset/Tutorialitems/10.2.html</item>
+        <item>file:///android_asset/Tutorialitems/10.3.html</item>
+        <item>file:///android_asset/Tutorialitems/10.4.html</item>
+        <item>file:///android_asset/Tutorialitems/11.1.html</item>
+        <item>file:///android_asset/Tutorialitems/11.2.html</item>
+        <item>file:///android_asset/Tutorialitems/11.3.html</item>
+        <item>file:///android_asset/Tutorialitems/12.1.html</item>
+        <item>file:///android_asset/Tutorialitems/12.2.html</item>
+        <item>file:///android_asset/Tutorialitems/12.3.html</item>
+        <item>file:///android_asset/Tutorialitems/12.4.html</item>
+        <item>file:///android_asset/Tutorialitems/12.5.html</item>
+        <item>file:///android_asset/Tutorialitems/13.1.html</item>
+        <item>file:///android_asset/Tutorialitems/13.2.html</item>
+        <item>file:///android_asset/Tutorialitems/13.3.html</item>
+        <item>file:///android_asset/Tutorialitems/13.4.html</item>
+        <item>file:///android_asset/Tutorialitems/13.5.html</item>
+        <item>file:///android_asset/Tutorialitems/13.6.html</item>
+
+
+    </string-array>
+
+
+    <string name="title_activity_basic">Basic</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

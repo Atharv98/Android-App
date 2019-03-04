@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>deleteFileDirectory</title>
+</head>
+<body bgcolor="black" text="yellow">
+	<pre>
+		
+import java.io.*;
+
+public class DeleteFileOrDirectory {
+
+	public static void main(String[] args) {
+
+		File file = new File("C://FileIO/DeleteDemo.txt");
+
+		boolean blnDeleted = file.delete();
+
+		System.out.println("Was file deleted ? : " + blnDeleted);
+
+		/*
+		Please note that delete method returns false if the file did not exists or the directory was not empty.
+		*/
+	}
+}
+	</pre>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="black" text="yellow">
+	<h1><center>10.1 Creating thread</center></h1>
+	<pre>
+
+		
+
+Threads are implemented in the form of objects that contain a method called run().
+
+The run() method is the heart and soul of any thread.
+public void run()
+{
+/* Your implementation of thethread here*/
+}
+
+The run() method should be invoked by an object of the concerned thread.This can be achieved by creating the thread and initiating it with the help of another thread method called start().
+
+A new thread can be created in two ways:
+1. By creating a thread class:
+Define a class that extends Thread class and override its run() method with the code required by the thread.
+
+2. By converting a class to a thread:
+Define a class that implements Runnable interface.The runnable interface has only one method, run(), that is to be defined in the method with the code to be executed by the thread.
+		
+	</pre>
+
+</body>
+</html>

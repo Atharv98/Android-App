@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Decimal To Hexa</title>
+</head>
+<body bgcolor="black" text="yellow">
+
+	import java.util.Scanner;
+
+public class Decimal_Hexa {
+	Scanner scan;
+	int num;
+
+	void getVal() {
+		System.out.println("Decimal to HexaDecimal");
+		scan = new Scanner(System.in);
+
+		System.out.println("\nEnter the number :");
+		num = Integer.parseInt(scan.nextLine());
+	}
+
+		void convert() {
+			String hexa = Integer.toHexString(num);
+
+			System.out.println("HexaDecimal Value is : " + hexa);
+		}
+
+}
+		class MainClass {
+			public static void main(String args[]) {
+
+				Decimal_Hexa obj = new Decimal_Hexa();
+
+				obj.getVal();
+				obj.convert();
+
+			}
+        }
+
+</body>
+</html>

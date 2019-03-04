@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bg bgcolor="black" text="red">
+	<h1><center>8.2 Extending Interfaces</center></h1>
+	<pre>
+
+		
+
+An interface can extend another interface, similarly to the way that a class can extend another class. 
+
+The extends keyword is used to extend an interface, and the child interface inherits the methods of the parent interface.
+this is achieved using the keyword extends as shown below:
+public class C extends A implements B {
+//trying to override doSomthing...
+public int myMethod(int x) {
+return doSomthingElse(x);
+}
+}
+
+Example
+interface ItemConstants
+{
+int code=2015;
+string name="Akshay";
+}
+interface Item extends ItemConstants
+{
+void display();
+		
+	</pre>
+
+</body>
+</html>

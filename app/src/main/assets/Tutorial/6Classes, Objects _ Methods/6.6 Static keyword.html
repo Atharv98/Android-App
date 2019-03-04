@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="black" text="yellow">
+<h1><center>6.6 Static keyword</center></h1>
+<pre>
+	
+
+The static keyword in java is used for memory management mainly. We can apply java static keyword with variables, methods, blocks and nested class. The static keyword belongs to the class than instance of the class.
+
+The static can be:
+1. variable (also known as class variable)
+2. method (also known as class method)
+3. block
+4. nested class
+
+Variables and methods marked static belong to the class rather than to any particular instance of the class. These can be used without having any instances of that class at all. Only the class is sufficient to invoke a static method or access a static variable. A static variable is shared by all the instances of that class i.e only one copy of the static variable is maintained.
+
+class Counter
+{
+static int animalCount=0;
+public Counter()
+{
+count+=1;
+}
+public static void main(String[] args)
+{
+new Counter();
+new Counter();
+new Counter();
+System.out.println(''The Number of Animals is: ''+count);
+}
+}
+Output:
+The Number of Animals is: 3.
+
+A static method cannot access non-static/instance variables, because a static method is never associated with any instance. The same applies with the non-static methods as well, a static method can't directly invoke a non-static method. But static method can access non-static methods by means of declaring instances and using them.
+
+Accessing static variables and methods
+In case of instance methods and instance variables, instances of that class are used to access them.
+
+<objectReference>.<instanceVariable>
+<objectReference>.<instanceMethod>
+
+class Counter
+{
+static int count=0;
+public Counter()
+{
+count+=1;
+}
+public static int getCount()
+{
+return count;
+}
+}
+class TestAnimal
+{
+public static void main(String[] args)
+{
+new Counter();
+new Counter();
+new Counter();
+System.out.println(''The Counter is: ''+ Counter.getCount());
+
+/* Notice the way in which the Static method is called using the class name followed by static method. */
+}
+}
+
+Remember that static methods can't be overridden. They can be redefined in a subclass, but redifining and overriding aren't the same thing. Its called as Hiding.
+	</pre>
+</body>
+</html>

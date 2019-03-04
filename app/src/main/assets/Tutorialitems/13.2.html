@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bg bgcolor="black" text="red">
+	<h1><center>13.2 Byte Stream</center></h1>
+	<pre>
+		
+
+ByteStream classes are to provide an surrounding to handle byte-oriented data or I/O.
+ByteStream classes are having 2 abstract class InputStream & OutputStream.
+These two abstract classes have several concrete classes that handle various devices such as disk files, network connection etc.
+
+InputStream
+- It is an abstract class in which defines an interface known as Closable interface.
+- Methods in this class will throw an IOException.
+
+OutputStream
+- It is an abstract class in which defines an interface known as Closable & Flushable interface.
+- Methods in this class returns void and throws IOException.
+
+methods by InputStream abstract class
+int read()
+it returns integer of next available input of bye
+
+int read(byte buffer[ ])
+it read up to the length of byte in buffer
+
+int read(byte buffer[ ], int offset, int numBytes)
+it read up to the length of byte in buffer starting form offset
+
+int available()
+It gets the no.of bytes of input available.
+
+void reset()
+it reads the input pointer.
+
+long skip(long numBytes)
+it returns the bytes ignored.
+
+void close()
+close the source of input.
+
+methods by OutputStream abstract class
+void write(int b)
+it writes a single byte in output.
+
+void write(byte buffer[ ])
+it write a full array of bytes to an output stream
+
+void write(byte buffer[ ], int offset, int numBytes)
+it writes a range of numBytes from array buffer starting at buffer offset.
+
+void close()
+close the source of output
+
+void flush()
+it marks a point to input stream that will stay valid until numBytes are read.
+	</pre>
+
+</body>
+</html>
